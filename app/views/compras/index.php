@@ -1,12 +1,12 @@
 <?php $this->tituloPagina = "Home"; ?>
 
-<?php include 'layout/topo.php'; ?>
+<?php $this->layout('layout.topo'); ?>
     <h2>Essa é a página principal</h2>
     <p>Lista de Compras</p>
     <ul>
       <?php foreach ($this->compras as $key => $value): ?>
-        <li><?php echo  $value['titulo']?> - <?php echo  $value['desc']?></li>
+        <li><?php echo  $value['titulo']?> - <?php echo  $value['descricao']?></li>
       <?php endforeach ?>
     </ul>
 
-  <?php include 'layout/rodape.php'; ?>
+<?php $this->layout('layout.rodape'); ?>
