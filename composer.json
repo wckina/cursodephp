@@ -1,0 +1,19 @@
+{
+    "name": "willian/phpoo",
+    "description": "Curso de PHP OO",
+    "type": "prct",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willian Zarpellon",
+            "email": "willian_celsozd@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "app/","Config\\": "config/"}
+    }    
+}
